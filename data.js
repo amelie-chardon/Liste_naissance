@@ -1,3 +1,6 @@
+const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+
+
 const data=[
     {
         "id": 1,
@@ -47,7 +50,7 @@ const data=[
     {
         "id": 6,
         "nom": "Echarpe porte-bébé extensible",
-        "description": "Cette écharpe permet de porter Bébé, dès la naissance jusqu'à 16 kg, dans différentes positions, que ce soit ventrale, dorsale ou encore latérale. L'écharpe est résistante et indéformable grâce à sa composition en Bambou, coton et élasthanne. ",
+        "description": "Cette écharpe permet de porter Bébé, dès la naissance jusqu'à 16 kg, dans différentes positions, que ce soit ventrale, dorsale ou encore latérale.",
         "prix":"47,99 €",
         "statut":"Disponible",
         "img_url": "https://m.media-amazon.com/images/I/41KE3UX5AXL._SL500_.jpg",
@@ -65,11 +68,56 @@ const data=[
     {
         "id": 8,
         "nom": "Sac à langer",
-        "description": "Tout équipé, ce très joli sac à langer accueille le nécessaire pour vous déplacer avec bébé ! A l'intérieur, vous retrouverez plusieurs accessoires indispensables : une pochette zippée, un tapis à langer pour le changer partout, un porte-biberon isotherme, deux attaches poussette et un porte clé !",
+        "description": "Tout équipé, ce très joli sac à langer accueille le nécessaire pour vous déplacer avec bébé !",
         "prix":"58,99 €",
         "statut":"Disponible",
         "img_url": "https://www.vertbaudet.fr/fstrz/r/s/media.vertbaudet.fr/Pictures/vertbaudet/151685/sac-a-langer-multipoches-family-vertbaudet.jpg",
         "url": "https://www.vertbaudet.fr/sac-a-langer-multipoches-family-vertbaudet-bleu.htm?ProductId=703130069&FiltreCouleur=6409&rid=7525&t=2"
+    },
+    {
+        "id": 9,
+        "nom": "Poussette trio Loola 3 bébé confort 3 en 1",
+        "description": "Un pack trio comprenant un chassis, un hamac, une nacelle et un cosy.",
+        "prix":"110,00 €",
+        "statut":"Disponible",
+        "img_url": "https://www.autourdebebe.com/medias/sys_master/root/h37/h66/8817417027614/pack54-1.jpg",
+        "url": "https://www.leboncoin.fr/equipement_bebe/2275028785.htm"
+    },
+    {
+        "id": 10,
+        "nom": "Pack couches lavables TE2",
+        "description": "Pack de départ Te2 (tout en deux) : idéal pour commencer à s'équiper en couches lavables.",
+        "prix":"83,90 €",
+        "statut":"Disponible",
+        "img_url": "https://www.ecomome.fr/41788-large_default/kit-essentiel-bambou-pack-couches-lavables.jpg",
+        "url": "https://www.ecomome.fr/couche-lavable-te2/kit-essentiel-bambou-pack-couches-lavables"
+    },
+    {
+        "id": 11,
+        "nom": "Location couches lavables",
+        "description": "kit location Couches lavables : Louez nos couches (13 à 15 selon le poids ) pour les tester !",
+        "prix":"40,00 €",
+        "statut":"Disponible",
+        "img_url": "https://www.ecomome.fr/41276-large_default/location-couches-lavables.jpg",
+        "url": "https://www.ecomome.fr/location-couches-lavables-votre-kit-essai/location-couches-lavables"
+    },
+    {
+        "id": 12,
+        "nom": "Lot de 3 maxi langes",
+        "description": "Économiques et écologiques, les 3 langes Kumla en gaze de coton sont très absorbants, doux et confortables. 100% coton.",
+        "prix":"22,99 €",
+        "statut":"Disponible",
+        "img_url": "https://cdn.laredoute.com/products/8/f/0/8f0efda2b1b70740f0a832943e51fad0.jpg?imgopt=twic&twic=v1/cover=800x800",
+        "url": "https://www.laredoute.fr/ppdp/prod-544263715.aspx?dim1=1000"
+    },
+    {
+        "id": 13,
+        "nom": "L'Album de mon bébé",
+        "description": "Un album de naissance tout en douceur !Dans ce joli album à remplir, conservez tous les souvenirs de votre bébé.",
+        "prix":"15,95 €",
+        "statut":"Disponible",
+        "img_url": "https://static.fnac-static.com/multimedia/Images/FR/NR/b2/ec/c8/13167794/1540-1/tsp20210216115315/L-Album-de-mon-bebe.jpg",
+        "url": "https://livre.fnac.com/a15602575/Charline-Freyburger-L-Album-de-mon-bebe#omnsearchpos=11"
     }/*,
     {
         "id": 4,
@@ -81,3 +129,7 @@ const data=[
         "url": ""
     }*/
 ]
+
+const newList = shuffle(data);
+
+console.log(newList);

@@ -3,23 +3,14 @@ const container = document.querySelector(".container");
 
 window.addEventListener('load', async e => {
     await fetchData();
-
-    if ('serviceWorker' in navigator) {
-        try {
-            navigator.serviceWorker.register('serviceWorker.js');
-            console.log('SW registered');
-
-        } catch (error) {
-            console.log('SW failed');
-        }
-    }
+    sortData();
 });
 
 async function fetchData() {
 
-    console.log(data);
+    //console.log(data);
 
-    container.innerHTML = data.map(data => {
+    container.innerHTML = newList.map(data => {
        
         let card=(
             
@@ -41,3 +32,17 @@ async function fetchData() {
 
     }).join('\n');
 }
+
+function sortData(){
+    let Art = $(".card");
+   
+    let ArrayArt = Array.from(Art);
+    let sorted=ArrayArt.sort(sorter);
+    function sorter(a,b) {
+        return a.dataset.statut.localeCompare(b.dataset.statut); // sorts based on alphabetical order
+    }
+    let container= $(".container");
+    container.empty();
+    sorted.forEach(e => container.append(e));
+}
+
