@@ -1,0 +1,45 @@
+html, body {
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+	grid-gap: 0.5em;
+    
+}
+
+.card{
+	height: max-content;
+}
+
+.Réservé{
+	filter: grayscale(90%);
+}
+
+main {
+    min-height: 100%;
+    padding:45px;
+    background-image:url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    
+    background-color: #99b39b;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+}
