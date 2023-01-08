@@ -22,8 +22,15 @@
 <main>
     <div class="container"></div>
 </main>
-<script src="data.js"></script>
-<script src="app.js"></script>
+<script>  
+    var version = new Date().getTime();
+    var script_app = document.createElement("script");  
+    script_app.src = "app.js?=" + version;  
+    document.body.appendChild(script_app); 
 
+    var script_data = document.createElement("script");  
+    script_data.src = "data.js?=" + version;  
+    document.body.appendChild(script_data);    
+  </script>
 </body>
 </html>
