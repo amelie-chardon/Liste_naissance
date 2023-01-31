@@ -76,17 +76,17 @@ const data=[
     },
     {
         "id": 9,
-        "nom": "Poussette trio Loola 3 bébé confort 3 en 1",
+        "nom": "Poussette trio",
         "description": "Un pack trio comprenant un chassis, un hamac, une nacelle et un cosy.",
         "prix":"110,00 €",
         "statut":"Disponible",
         "img_url": "https://www.autourdebebe.com/medias/sys_master/root/h37/h66/8817417027614/pack54-1.jpg",
-        "url": "https://www.leboncoin.fr/equipement_bebe/2275028785.htm"
+        "url": ""
     },
     {
         "id": 10,
         "nom": "Pack couches lavables TE2",
-        "description": "Pack de départ Te2 (tout en deux) : idéal pour commencer à s'équiper en couches lavables.",
+        "description": "Pack de départ TE2 (tout en deux) : idéal pour commencer à s'équiper en couches lavables.",
         "prix":"83,90 €",
         "statut":"Disponible",
         "img_url": "https://www.ecomome.fr/41788-large_default/kit-essentiel-bambou-pack-couches-lavables.jpg",
@@ -95,7 +95,7 @@ const data=[
     {
         "id": 11,
         "nom": "Location couches lavables",
-        "description": "kit location Couches lavables : Louez nos couches (13 à 15 selon le poids ) pour les tester !",
+        "description": "kit location Couches lavables : Louez nos couches (13 à 15 selon le poids) pour les tester !",
         "prix":"40,00 €",
         "statut":"Disponible",
         "img_url": "https://www.ecomome.fr/41276-large_default/location-couches-lavables.jpg",
@@ -113,7 +113,7 @@ const data=[
     {
         "id": 13,
         "nom": "L'Album de mon bébé",
-        "description": "Un album de naissance tout en douceur !Dans ce joli album à remplir, conservez tous les souvenirs de votre bébé.",
+        "description": "Un album de naissance tout en douceur ! Dans ce joli album à remplir, conservez tous les souvenirs de votre bébé.",
         "prix":"15,95 €",
         "statut":"Réservé",
         "img_url": "https://static.fnac-static.com/multimedia/Images/FR/NR/b2/ec/c8/13167794/1540-1/tsp20210216115315/L-Album-de-mon-bebe.jpg",
@@ -121,6 +121,41 @@ const data=[
     },
     {
         "id": 14,
+        "nom": "Trousse de soin pour bébé",
+        "description": " Trousse de soin complète de 9 accessoires essentiels pour le soin et la toilette de bébé au quotidien.",
+        "prix":"34,90 €",
+        "statut":"Disponible",
+        "img_url": "https://fr.shop-orchestra.com/on/demandware.static/-/Sites-orchestra-master/default/dwb779d6ef/images/view/P/4/8/1/7/P48178_SANS_1_X.jpg",
+        "url": "https://fr.shop-orchestra.com/fr/puericulture/bain/thermometre-produit-de-soin/trousse-de-soin-pour-bebe---aqua-P48178.html?dwvar_P48178_orc_color=SANS&dwvar_P48178_orc_size=WEB-0000297"
+    },
+    {
+        "id": 15,
+        "nom": "Kit hygiène bébé au naturel",
+        "description": "Un ensemble composé de beurre de karité, huile végétale d’amande douce, macérat huileux de Calendula, hydrolat de fleur d’oranger, savon d'Alep, eau de chaux.",
+        "prix":"30 - 50 €",
+        "statut":"Disponible",
+        "img_url": "https://www.aroma-zone.com/info/sites/default/files/fiches-conseils/Photo-intro_Fiche-beaute_Prendre-soin-peau-bebe.jpg",
+        "url": "https://www.aroma-zone.com/info/fiches-conseils/beaute/soin-des-enfants/peau-des-enfants/soin-peau-bebe-naturel"
+    },
+    {
+        "id": 16,
+        "nom": "Berceau cododo",
+        "description": "Berceau qui permet à bébé de dormir près de vous pendant la nuit tout en ayant son propre berceau pour plus de sécurité.",
+        "prix":"Inconnu",
+        "statut":"Réservé",
+        "img_url": "https://www.vertbaudet.fr/fstrz/r/s/media.vertbaudet.fr/Pictures/vertbaudet/133106/berceau-cododo-next2me-air-chicco.jpg?width=800&frz-v=141",
+        "url": ""
+    },
+    {
+        "id": 17,
+        "nom": "Chaise haute",
+        "description": "Votre enfant va apprécier de passer des repas confortablement installés dans sa chaise haute.",
+        "prix":"Inconnu",
+        "statut":"Réservé",
+        "img_url": "https://www.vertbaudet.fr/fstrz/r/s/media.vertbaudet.fr/Pictures/vertbaudet/222937/chaise-haute-evoluseat.jpg?width=457?width=1320",
+        "url": ""
+    },
+    {   "id":18,
         "nom": "Séance photos naissance",
         "description": "- Prêt de plusieurs tenues<br> - Choix de différents fonds <br>- 30 photos HD numériques",
         "prix":"240,00 €",
@@ -138,7 +173,6 @@ const data=[
         "url": ""
     }*/
 ]
-
 const newList = shuffle(data);
 
 console.log(newList);

@@ -13,7 +13,7 @@
 <header>
     <section class="section is-small">
         <h1 class="is-size-1">Liste de naissance</h1>
-        </br><p>Voici notre liste de naissance, pour ceux qui voudraient nous gâter pour l'arrivée de bébé.
+        </br><p>Voici notre liste de naissance, pour ceux qui voudraient nous gâter pour l'arrivée de bébé. Prévenez-nous pour réserver un cadeau sur la liste.
             Cette liste est une proposition, privilégiez toujours les produits de seconde main, les matières naturelles, etc. Merci d'avance ! </p>
         </p>
     </br><p><i>Amélie & Jean-Pascal</i></p>
@@ -22,8 +22,15 @@
 <main>
     <div class="container"></div>
 </main>
-<script src="data.js"></script>
-<script src="app.js"></script>
+<script>  
+    var version = new Date().getTime();
+    var script_app = document.createElement("script");  
+    script_app.src = "app.js?=" + version;  
+    document.body.appendChild(script_app); 
 
+    var script_data = document.createElement("script");  
+    script_data.src = "data.js?=" + version;  
+    document.body.appendChild(script_data);    
+  </script>
 </body>
 </html>
