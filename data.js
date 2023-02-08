@@ -70,7 +70,7 @@ const data=[
         "nom": "Sac à langer",
         "description": "Tout équipé, ce très joli sac à langer accueille le nécessaire pour vous déplacer avec bébé !",
         "prix":"58,99 €",
-        "statut":"Disponible",
+        "statut":"Réservé",
         "img_url": "https://www.vertbaudet.fr/fstrz/r/s/media.vertbaudet.fr/Pictures/vertbaudet/151685/sac-a-langer-multipoches-family-vertbaudet.jpg",
         "url": "https://www.vertbaudet.fr/sac-a-langer-multipoches-family-vertbaudet-bleu.htm?ProductId=703130069&FiltreCouleur=6409&rid=7525&t=2"
     },
@@ -139,7 +139,7 @@ const data=[
     },
     {
         "id": 16,
-        "nom": "Berceau cododo",
+        "nom": "Lit bébé",
         "description": "Berceau qui permet à bébé de dormir près de vous pendant la nuit tout en ayant son propre berceau pour plus de sécurité.",
         "prix":"Inconnu",
         "statut":"Réservé",
@@ -162,6 +162,33 @@ const data=[
         "statut":"Disponible",
         "img_url": "https://www.portail-autoentrepreneur.fr/media/blog/post/photographe-auto-entrepreneur.jpg",
         "url": "https://m-motionpictures.wixsite.com/marionwebsite/grossesse-naissance"
+    },
+    {
+        "id": 19,
+        "nom": "Coffret repas en silicone",
+        "description": "Un adorable coffret repas composé d'une assiette en silicone forme tête d'ourson et d'un couteau et une fourchette en inox et silicone.",
+        "prix":"16,99 €",
+        "statut":"Disponible",
+        "img_url": "https://www.vertbaudet.fr/fstrz/r/s/media.vertbaudet.fr/Pictures/vertbaudet/218114/coffret-repas-en-silicone-ours.jpg",
+        "url": "https://www.vertbaudet.fr/coffret-repas-en-silicone-ours-caramel.htm?ProductId=703230574&FiltreCouleur=6509&t=1"
+    },
+    {
+        "id": 20,
+        "nom": "Biberon d'apprentissage 2 en 1",
+        "description": "Le biberon d'apprentissage permet aux jeunes enfants, dès 4 mois, d’apprendre à boire seul librement.",
+        "prix":"16,99 €",
+        "statut":"Disponible",
+        "img_url": "https://www.vertbaudet.fr/fstrz/r/s/media.vertbaudet.fr/Pictures/vertbaudet/150891/biberon-dapprentissage-2-en-1-210-ml-beaba.jpg",
+        "url": "https://www.vertbaudet.fr/biberon-d-apprentissage-2-en-1-210-ml-beaba-rose.htm?ProductId=703230443&FiltreCouleur=6649&t=1"
+    },
+    {
+        "id": 21,
+        "nom": "Pack 1er repas",
+        "description": "Composé de 12 portions clip à fermeture hermétique et de 2 cuillères 1er âge en silicone.",
+        "prix":"31,99 €",
+        "statut":"Disponible",
+        "img_url": "https://www.vertbaudet.fr/fstrz/r/s/media.vertbaudet.fr/Pictures/vertbaudet/171593/pack-1er-repas-beaba.jpg",
+        "url": "https://www.vertbaudet.fr/pack-1er-repas-beaba-assortis-tons-roses-eucalyptu.htm?ProductId=703230513&FiltreCouleur=6649&t=1&tool=T2Sproduit2"
     }/*,
     {
         "id": 4,
@@ -174,5 +201,3 @@ const data=[
     }*/
 ]
 const newList = shuffle(data);
-
-console.log(newList);
